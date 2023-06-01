@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_bg">#f9ff45</color>
     <color name="main_txt">#3ef531</color>
+    <color name="deezy_bg">#552727</color>
+    <color name="deezy_bg_btns">#FF9800</color>
+    <color name="deezy_txt_title">#D11A1A</color>
+    <color name="deezy_txt_btns">#03A9F4</color>
 </resources>
