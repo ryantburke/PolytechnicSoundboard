@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_bg">#f9ff45</color>
     <color name="main_txt">#3ef531</color>
+    <color name="fairysounds_background">#a7ccdb</color>
+    <color name="fairysounds_button"></color>
+    <color name="fairysounds_buttontext">#a9b69c</color>
+    <color name="fairysounds_titletext">#f2e67c</color>
 </resources>
