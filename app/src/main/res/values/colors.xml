@@ -2,6 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main_bg">#f9ff45</color>
-    <color name="main_txt">#3ef531</color>
+    <color name="naithan_title_text">#f1f500</color>
+    <color name="naithan_bg">#4805f2</color>
+    <color name="naithan_btn_bg1">#f5dd02</color>
+    <color name="naithan_btn_bg2">#f51202</color>
+    <color name="naithan_btn_txt1">#4f4d47</color>
+    <color name="naithan_btn_txt2">#661649</color>
 </resources>
