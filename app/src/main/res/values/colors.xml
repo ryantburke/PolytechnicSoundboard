@@ -14,4 +14,8 @@
     <color name="fairysounds_button"></color>
     <color name="fairysounds_buttontext">#a9b69c</color>
     <color name="fairysounds_titletext">#f2e67c</color>
+    <color name="deezy_bg">#B6B3B3</color>
+    <color name="deezy_bg_btns">#E88D97</color>
+    <color name="deezy_txt_title">#FFFFFF</color>
+    <color name="deezy_txt_btns">#FFFFFF</color>
 </resources>
