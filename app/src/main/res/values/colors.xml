@@ -18,4 +18,8 @@
     <color name="deezy_bg_btns">#E88D97</color>
     <color name="deezy_txt_title">#FFFFFF</color>
     <color name="deezy_txt_btns">#FFFFFF</color>
+    <color name="jon_bg">#31D8F5</color>
+    <color name="jon_title_txt">#3ef531</color>
+    <color name="jon_btn_bg">#3ef531</color>
+    <color name="jon_btn_txt">#3ef531</color>
 </resources>
