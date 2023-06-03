@@ -18,8 +18,6 @@ public class SoundBoardActivity extends AppCompatActivity {
     protected ImageView ivSwapper;
 
     private ArrayList<SoundBoardActivity> soundBoards = new ArrayList<SoundBoardActivity>();
-
-    //int[] layouts = {R.layout.activity_main,R.layout.soundboard_funny_sounds,R.layout.soundboard_laughs, R.layout.soundboard_cries};
     private int currentSoundboardIndex = 0;
 
     private SoundBoardActivity currentSoundboard;
@@ -34,7 +32,7 @@ public class SoundBoardActivity extends AppCompatActivity {
         //add soundboards
         soundBoards.add(new SoundBoardNaithan());
         soundBoards.add(new SoundBoardMeme());
-        soundBoards.add(new SoundBoardFairySounds());
+        //soundBoards.add(new SoundBoardFairySounds());
         soundBoards.add(new SoundboardDeezy());
         soundBoards.add(new SoundBoardJon());
         soundBoards.add(new SoundBoardCries());
