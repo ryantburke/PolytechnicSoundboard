@@ -25,6 +25,7 @@
         <activity android:name="com.poly.soundboard.SoundBoardLaughs" />
         <activity android:name="com.poly.soundboard.SoundBoardNaithan" />
         <activity android:name="com.poly.soundboard.SoundBoardMeme" />
+        <activity android:name="com.poly.soundboard.SoundBoardFairySounds" />
     </application>
 
 </manifest>

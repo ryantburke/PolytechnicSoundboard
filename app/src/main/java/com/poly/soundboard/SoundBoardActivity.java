@@ -33,8 +33,8 @@ public class SoundBoardActivity extends AppCompatActivity {
 
         //add soundboards
         soundBoards.add(new SoundBoardNaithan());
-        soundBoards.add(new SoundBoardFunnySounds());
         soundBoards.add(new SoundBoardMeme());
+        soundBoards.add(new SoundBoardFairySounds());
         soundBoards.add(new SoundBoardCries());
         soundBoards.add(new SoundBoardLaughs());
 
@@ -73,7 +73,9 @@ public class SoundBoardActivity extends AppCompatActivity {
             public void onSwipeRight() {
                 currentSoundboardIndex++;
                 currentSoundboard = soundBoards.get((currentSoundboardIndex % soundBoards.size() + soundBoards.size()) % soundBoards.size());
-
+                Log.d("Swipe","right");
+                Log.d("Index",""+currentSoundboardIndex);
+                Log.d("Index%",""+currentSoundboardIndex % soundBoards.size() );
                 Intent intent = new Intent(context,currentSoundboard.getClass());
                 startActivity(intent);
 
@@ -85,6 +87,9 @@ public class SoundBoardActivity extends AppCompatActivity {
 
                 currentSoundboard = soundBoards.get((currentSoundboardIndex % soundBoards.size() + soundBoards.size()) % soundBoards.size());
 
+                Log.d("Swipe","right");
+                Log.d("Index",""+currentSoundboardIndex);
+                Log.d("Index%",""+currentSoundboardIndex % soundBoards.size() );
 
                 Intent intent = new Intent(context,currentSoundboard.getClass());
                 startActivity(intent);
