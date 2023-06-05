@@ -28,6 +28,7 @@
         <activity android:name="com.poly.soundboard.SoundBoardFairySounds" />
         <activity android:name="com.poly.soundboard.SoundBoardJon" />
         <activity android:name="com.poly.soundboard.SoundboardDeezy" />
+        <activity android:name="com.poly.soundboard.SoundBoardNatimals" />
     </application>
 
 </manifest>
