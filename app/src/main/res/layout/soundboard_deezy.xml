@@ -16,12 +16,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_roar"
         android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Roar"
         android:textColor="@color/deezy_txt_btns"
@@ -29,40 +29,41 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.484" />
 
     <Button
         android:id="@+id/btn_trombone"
-        android:layout_width="114dp"
-        android:layout_height="134dp"
+        android:layout_width="96dp"
+        android:layout_height="125dp"
         android:layout_marginStart="12dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Trombone"
         android:textColor="@color/deezy_txt_btns"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/btn_laugh"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Laugh"
         android:textColor="@color/deezy_txt_btns"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-         />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_sword"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:layout_marginTop="4dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Sword"
@@ -76,8 +77,8 @@
 
     <Button
         android:id="@+id/btn_boing"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:layout_marginTop="4dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Boing"
@@ -89,8 +90,8 @@
 
     <Button
         android:id="@+id/btn_arcadesound"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Arcade Sound"
         android:textColor="@color/deezy_txt_btns"
@@ -101,36 +102,37 @@
 
     <Button
         android:id="@+id/btn_bombdrop"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:layout_marginStart="12dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Bomb Drop"
         android:textColor="@color/deezy_txt_btns"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-        />
+        app:layout_constraintVertical_bias="0.51" />
 
     <Button
         android:id="@+id/btn_cowmoo"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Cow Moo"
         android:textColor="@color/deezy_txt_btns"
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-         />
+        app:layout_constraintVertical_bias="0.51" />
 
     <Button
         android:id="@+id/btn_slotmachine"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Slot Machine"
         android:textColor="@color/deezy_txt_btns"
@@ -143,22 +145,20 @@
 
     <Button
         android:id="@+id/btn_orchestra"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="111dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Orchestra"
         android:textColor="@color/deezy_txt_btns"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-         />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/btn_fart"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Fart"
         android:textColor="@color/deezy_txt_btns"
@@ -239,16 +239,17 @@
 
     <Button
         android:id="@+id/btn_whistle"
-        android:layout_width="115dp"
-        android:layout_height="134dp"
+        android:layout_width="110dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/deezy_bg_btns"
         android:text="Whistle"
         android:textColor="@color/deezy_txt_btns"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
-        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.484" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
