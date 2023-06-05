@@ -4,7 +4,7 @@ import android.media.MediaPlayer;
 import android.view.View;
 import android.widget.Button;
 
-public class SoundBoardJon extends SoundBoardActivity {
+public class SoundBoardParty extends SoundBoardActivity {
 
     private Button btnRing;
 
