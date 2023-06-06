@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/party_bg"
+    tools:context=".SoundBoardParty">
+
+    <ImageView
+        android:id="@+id/iv_swiper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="268dp"
+        android:layout_height="29dp"
+        android:text="Party Soundboard"
+        android:textColor="@color/party_title_txt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="116dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="271dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="440dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="580dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.11922141" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40145984" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6569343" />
+
+    <Button
+        android:id="@+id/btn_ring"
+        android:layout_width="105dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="4dp"
+        android:text="Ring"
+        android:backgroundTint="@color/party_btn_bg"
+        android:textColor="@color/party_btn_txt"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91240877" />
+
+    <Button
+        android:id="@+id/btn_wildgeese"
+        android:layout_width="94dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:text="Wild geese"
+        android:textColor="@color/party_btn_txt"
+        android:backgroundTint="@color/party_btn_bg"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btn_arcade"
+        android:layout_width="94dp"
+        android:layout_height="95dp"
+        android:text="Arcade"
+        android:textColor="@color/party_btn_txt"
+        android:backgroundTint="@color/party_btn_bg"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btn_donkeyscream"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:text="Donkey scream"
+        android:backgroundTint="@color/party_btn_bg"
+        android:textColor="@color/party_btn_txt"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <Button
+        android:id="@+id/btn_sword"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        android:text="Sword smash"
+        android:backgroundTint="@color/party_btn_bg"
+        android:textColor="@color/party_btn_txt"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/btn_monkey"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:text="Monkey"
+        android:backgroundTint="@color/party_btn_bg"
+        android:textColor="@color/party_btn_txt"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/btn_robot"
+        android:layout_width="105dp"
+        android:layout_height="115dp"
+        android:text="Robot voice"
+        android:textColor="@color/party_btn_txt"
+        android:backgroundTint="@color/party_btn_bg"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/btn_thunder"
+        android:layout_width="105dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:text="Thunder"
+        android:textColor="@color/party_btn_txt"
+        android:backgroundTint="@color/party_btn_bg"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/btn_guitar"
+        android:layout_width="94dp"
+        android:layout_height="95dp"
+        android:text="Guitar"
+        android:textColor="@color/party_btn_txt"
+        android:backgroundTint="@color/party_btn_bg"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/btn_whistle"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:text="Whistle"
+        android:textColor="@color/party_btn_txt"
+        android:backgroundTint="@color/party_btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/btn_toy"
+        android:layout_width="97dp"
+        android:layout_height="113dp"
+        android:text="Toy"
+        android:backgroundTint="@color/party_btn_bg"
+        android:textColor="@color/party_btn_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/btn_bird"
+        android:layout_width="96dp"
+        android:layout_height="109dp"
+        android:text="Bird"
+        android:textColor="@color/party_btn_txt"
+        android:backgroundTint="@color/party_btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
