@@ -40,9 +40,10 @@ public class ChooseSoundboardFragment extends Fragment {
         this.recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         this.soundboardsList = new ArrayList<ModelSoundBoard>();
+        this.soundboardsList.add(new ModelSoundBoard("WackAttack 2.0", "Naithan Rivera", new SoundBoardNaithan()));
         this.soundboardsList.add(new ModelSoundBoard("Deezy", "Dylan Ork", new SoundboardDeezy()));
-        this.soundboardsList.add(new ModelSoundBoard("Deezy", "Dylan Ork", new SoundboardDeezy()));
-        this.soundboardsList.add(new ModelSoundBoard("Deezy", "Dylan Ork", new SoundboardDeezy()));
+        this.soundboardsList.add(new ModelSoundBoard("Meme", "...", new SoundBoardMeme()));
+        this.soundboardsList.add(new ModelSoundBoard("Party", "...", new SoundBoardParty()));
 
         RecyclerViewAdapterSoundBoard adapter = new RecyclerViewAdapterSoundBoard(this.context, this.soundboardsList);
         this.recyclerView.setAdapter(adapter);

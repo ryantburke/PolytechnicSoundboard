@@ -19,9 +19,9 @@ public class RecyclerViewAdapterSoundBoard extends RecyclerView.Adapter<Recycler
         void onItemClick(ModelSoundBoard modelSoundBoard);
     }
 
-    public RecyclerViewAdapterSoundBoard(Context context2, ArrayList<ModelSoundBoard> soundboardModels2) {
-        this.context = context2;
-        this.soundboardModels = soundboardModels2;
+    public RecyclerViewAdapterSoundBoard(Context context, ArrayList<ModelSoundBoard> soundboardModels) {
+        this.context = context;
+        this.soundboardModels = soundboardModels;
     }
 
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

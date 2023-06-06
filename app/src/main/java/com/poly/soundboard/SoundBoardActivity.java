@@ -35,8 +35,6 @@ public class SoundBoardActivity extends AppCompatActivity {
         //soundBoards.add(new SoundBoardFairySounds());
         soundBoards.add(new SoundboardDeezy());
         soundBoards.add(new SoundBoardParty());
-        soundBoards.add(new SoundBoardCries());
-        soundBoards.add(new SoundBoardLaughs());
 
 
         currentSoundboard = soundBoards.get(currentSoundboardIndex);
@@ -52,8 +50,6 @@ public class SoundBoardActivity extends AppCompatActivity {
         Log.d("added activity",""+soundBoards.get(0).getClass());
         Log.d("added activity",""+soundBoards.get(1).getClass());
         Log.d("added activity",""+soundBoards.get(2).getClass());
-
-
 
         swapBoardOnGesture();
 

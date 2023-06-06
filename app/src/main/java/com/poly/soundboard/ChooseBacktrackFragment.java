@@ -41,8 +41,9 @@ public class ChooseBacktrackFragment extends Fragment {
 
         backtracks = new ArrayList<ModelBacktrack>();
 
-        backtracks.add(new ModelBacktrack("Anxiety", "Ryan Burke", R.raw.sample_backtrack_anxiety));
         backtracks.add(new ModelBacktrack("Garagy", "Ryan Burke", R.raw.sample_backtrack_garagy));
+        backtracks.add(new ModelBacktrack("Anxiety", "Ryan Burke", R.raw.sample_backtrack_anxiety));
+
 
         RecyclerViewAdapterBacktrack adapter = new RecyclerViewAdapterBacktrack(context, backtracks);
         recyclerView.setAdapter(adapter);
