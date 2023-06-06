@@ -88,7 +88,7 @@ public class SoundBoardActivity extends AppCompatActivity {
 
                 currentSoundboard = soundBoards.get((currentSoundboardIndex % soundBoards.size() + soundBoards.size()) % soundBoards.size());
 
-                Log.d("Swipe","right");
+                Log.d("Swipe","left");
                 Log.d("Index",""+currentSoundboardIndex);
                 Log.d("Index%",""+currentSoundboardIndex % soundBoards.size() );
 
@@ -97,6 +97,17 @@ public class SoundBoardActivity extends AppCompatActivity {
 
                 swapBoardOnGesture();
             }
+
+            public void onSwipeTop() {
+
+                Log.d("Swipe","top");
+
+                Intent intent = new Intent(context,SoundBoardZMenu.class);
+                startActivity(intent);
+
+                swapBoardOnGesture();
+            }
+
 
         });
 

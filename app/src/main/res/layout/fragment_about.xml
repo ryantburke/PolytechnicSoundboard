@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/frame_layout" android:background="@color/poly_yellow" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="36sp" android:id="@+id/textView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Our Story" android:textAlignment="center"/>
+    <ImageView android:id="@+id/imageView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/poly_large_letters"/>
+    <TextView android:textSize="24sp" android:id="@+id/textView4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="Long Beach Poly students have come together to create an android app to show off their computer science skils. We hope you enjoy our efforts!"/>
+</LinearLayout>

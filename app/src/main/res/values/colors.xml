@@ -4,6 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_bg">#FFFFFFFF</color>
     <color name="main_txt">#FFFFFFFF</color>
+    <color name="poly_green">#4caf50</color>
+    <color name="poly_green_light">#5acd5e</color>
+    <color name="poly_yellow">#ffeb3b</color>
     <color name="naithan_title_text">#f1f500</color>
     <color name="naithan_bg">#4805f2</color>
     <color name="naithan_btn_bg1">#f5dd02</color>
