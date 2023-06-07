@@ -21,6 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.poly.soundboard.SoundBoardCries" />
+        <activity android:name="com.poly.soundboard.SoundBoardLaughs" />
         <activity android:name="com.poly.soundboard.SoundBoardNaithan" />
         <activity android:name="com.poly.soundboard.SoundBoardMeme" />
         <activity android:name="com.poly.soundboard.SoundBoardFairySounds" />
@@ -32,6 +34,7 @@
         <activity android:name="com.poly.soundboard.SoundBoardAnimalsMisc" />
         <activity android:name="com.poly.soundboard.SoundBoardGarageBand" />
         <activity android:name="com.poly.soundboard.SoundBoardLucas" />
+        <activity android:name="com.poly.soundboard.SoundBoardMarsound" />
     </application>
 
 </manifest>
