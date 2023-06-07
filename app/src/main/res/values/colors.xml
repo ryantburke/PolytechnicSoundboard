@@ -25,4 +25,25 @@
     <color name="party_title_txt">#D8ED89</color>
     <color name="party_btn_bg">#FFEA80</color>
     <color name="party_btn_txt">#24A38A</color>
+    <color name="darin_bg">#03A9F4</color>
+    <color name="darin_title_txt">#F44336</color>
+    <color name="darin_btn_bg">#F44336</color>
+    <color name="darin_btn_txt">#FFFFFF</color>
+    <color name="animalsmisc_title_txt">#24A38A</color>
+    <color name="animalsmisc_bg">#357B8C</color>
+    <color name="animalsmisc_btn_txt">#8A63D1</color>
+    <color name="animalsmisc_btn_bg">#6B57CD6A</color>
+
+    <color name="lucas_bg">#274A28</color>
+    <color name="lucas_title_txt">#FFFFFF</color>
+    <color name="lucas_btn_bg">#F9C3FF</color>
+    <color name="lucas_btn_txt">#FFFFFF</color>
+    <color name="jon_bg">#31D8F5</color>
+    <color name="jon_title_txt">#3ef531</color>
+    <color name="jon_btn_bg">#3ef531</color>
+    <color name="jon_btn_txt">#3ef531</color>
+    <color name="natimals_bg">#EFB4C8</color>
+    <color name="natimals_bg_btn">#B0D4F1</color>
+    <color name="natimals_txt_title">#F4F0F0</color>
+    <color name="natimals_txt_btn">#CEF1CF</color>
 </resources>

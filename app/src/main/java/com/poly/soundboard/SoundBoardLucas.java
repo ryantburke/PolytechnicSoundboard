@@ -1,240 +1,305 @@
 package com.poly.soundboard;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class SoundBoardLucas extends SoundBoardActivity {
 
-public class SoundBoardFairySounds extends SoundBoardActivity {
+    private Button btnWind;
 
+    private Button btnGameOver;
 
-    private Button btnMagical, btnWaterSpell, btnBellBless, btnGlitter, btnTeleportaiton, btnHorrorBell, btnPotion, btnVideoGame, btnBellOfPromise, btnSpinning, btnLongSpell, btnBubbles;
+    private Button btnMonkey;
 
-    protected void initialize() {
-        setContentView(R.layout.soundboard_fairysounds);
+    private Button btnFart;
+
+    private Button btnClown;
+
+    private Button btnGroan;
+
+    private Button btnCricket;
+
+    private Button btnHorn;
+
+    private Button btnError;
+
+    private Button btnGoose;
+
+    private Button btnSad;
+
+    private Button btnSneez;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.soundboard_lucas);
 
         context = this;
         ivSwapper = findViewById(R.id.iv_swiper);
-        //buttons
-        btnMagical = findViewById(R.id.btn_magical);
-        btnWaterSpell = findViewById(R.id.btn_water_spell);
-        btnBellBless = findViewById(R.id.btn_bell_bless);
-        btnGlitter = findViewById(R.id.btn_fairy_glitter);
-        btnTeleportaiton = findViewById(R.id.btn_teleportation);
-        btnHorrorBell = findViewById(R.id.btn_horror_fairy);
-        btnPotion = findViewById(R.id.btn_potion);
-        btnVideoGame = findViewById(R.id.btn_video_game);
-        btnBellOfPromise = findViewById(R.id.btn_bell_of_promise);
-        btnSpinning = findViewById(R.id.btn_spinning);
-        btnLongSpell = findViewById(R.id.btn_long_spell);
-        btnBubbles = findViewById(R.id.btn_bubbles);
 
-        btnMagical.setOnClickListener(new View.OnClickListener() {
+        btnWind = findViewById(R.id.btn_wind);
+
+        btnGameOver = findViewById(R.id.btn_gameover);
+
+        btnMonkey = findViewById(R.id.btn_monkey);
+
+        btnFart = findViewById(R.id.btn_fart);
+
+        btnClown = findViewById(R.id.btn_clown);
+
+        btnGroan = findViewById(R.id.btn_groan);
+
+        btnCricket = findViewById(R.id.btn_cricket);
+
+        btnHorn = findViewById(R.id.btn_horn);
+
+        btnError = findViewById(R.id.btn_error);
+
+        btnGoose = findViewById(R.id.btn_goose);
+
+        btnSad = findViewById(R.id.btn_sad);
+
+        btnSneez = findViewById(R.id.btn_sneez);
+
+        btnWind.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playMagical();
-            }
-        });
-        btnWaterSpell.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playWaterSpell();
-            }
-        });
-        btnBellBless.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playBellBless();
-            }
-        });
-        btnGlitter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playGlitter();
-            }
-        });
-        btnTeleportaiton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playTeleportation();
-            }
-        });
-        btnHorrorBell.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playHorrorBell();
-            }
-        });
-        btnPotion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playPotion();
-            }
-        });
-        btnVideoGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playVideoGame();
-            }
-        });
-        btnBellOfPromise.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playBellOfPromise();
-            }
-        });
-        btnSpinning.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playSpinning();
-            }
-        });
-        btnLongSpell.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playLongSpell();
-            }
-        });
-        btnBubbles.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playBubbles();
+                playWind();
             }
         });
 
+        btnGameOver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playGameOver();
+            }
+        });
 
-        }
-        private void playMagical() {
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_magical_button);
+        btnMonkey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playMonkey();
+            }
+        });
+
+        btnFart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playFart();
+            }
+        });
+
+        btnClown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playClown();
+            }
+        });
+
+        btnGroan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playGroan();
+            }
+        });
+
+        btnCricket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playCricket();
+            }
+        });
+
+        btnHorn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playHorn();
+            }
+        });
+
+        btnError.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playError();
+            }
+        });
+
+        btnGoose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playGoose();
+            }
+        });
+
+        btnSad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSad();
+            }
+        });
+
+        btnSneez.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSneez();
+            }
+        });
+    }
+
+        private void playWind() {
+            MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_wind);
             mp.start();
             mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
+                    mp.stop();
                     mp.release();
                     mp = null;
                 }
             });
         }
-    private void playWaterSpell() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_water_spell);
+
+    private void playGameOver() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_gameover);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
 
-    private void playBellBless() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_bell_bless);
+    private void playMonkey() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_monkey);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-    private void playGlitter() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_glitter);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
 
-    private void playTeleportation() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_teleport);
+    private void playFart() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_fart);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
-    private void playHorrorBell() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_horror_bell);
+
+    private void playClown() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_clown);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
-    private void playPotion() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_potion_music);
+
+    private void playGroan() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_groan);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
-    private void playVideoGame() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_video_game_magic);
+
+    private void playCricket() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_cricket);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
-    private void playBellOfPromise() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_bell_of_promise);
+
+    private void playHorn() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_horn);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
-    private void playSpinning() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_spinning_magic);
+
+    private void playError() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_error);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
-    private void playLongSpell() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_casting_long_fairy_spell);
+
+    private void playGoose() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_goose);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
         });
     }
-    private void playBubbles() {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.sample_fairysounds_magic_bubbles);
+
+    private void playSad() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_sad);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playSneez() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.sample_lucas_sneeze);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
                 mp.release();
                 mp = null;
             }
@@ -244,8 +309,4 @@ public class SoundBoardFairySounds extends SoundBoardActivity {
 
 
 
-}
-
-
-
-
+    }

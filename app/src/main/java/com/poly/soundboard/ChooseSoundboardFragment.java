@@ -39,11 +39,18 @@ public class ChooseSoundboardFragment extends Fragment {
         recyclerView2.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
-        this.soundboardsList = new ArrayList<ModelSoundBoard>();
-        this.soundboardsList.add(new ModelSoundBoard("WackAttack 2.0", "Naithan Rivera", new SoundBoardNaithan()));
-        this.soundboardsList.add(new ModelSoundBoard("Deezy", "Dylan Ork", new SoundboardDeezy()));
-        this.soundboardsList.add(new ModelSoundBoard("Meme", "...", new SoundBoardMeme()));
-        this.soundboardsList.add(new ModelSoundBoard("Party", "...", new SoundBoardParty()));
+        soundboardsList = new ArrayList<ModelSoundBoard>();
+        soundboardsList.add(new ModelSoundBoard("WackAttack 2.0", "Naithan Rivera", new SoundBoardNaithan()));
+        soundboardsList.add(new ModelSoundBoard("Deezy", "Dylan Ork", new SoundboardDeezy()));
+        soundboardsList.add(new ModelSoundBoard("Meme", "Bryan Guzman", new SoundBoardMeme()));
+        soundboardsList.add(new ModelSoundBoard("Party", "Jonathan Mek", new SoundBoardParty()));
+        soundboardsList.add(new ModelSoundBoard("Sokit", "Darin Sok", new SoundBoardDarin()));
+        soundboardsList.add(new ModelSoundBoard("Animals & Misc", "Enrique Martinez", new SoundBoardAnimalsMisc()));
+        soundboardsList.add(new ModelSoundBoard("GarageBand", "Hannah Rodriguez", new SoundBoardGarageBand()));
+        soundboardsList.add(new ModelSoundBoard("Marsound", "Mario Rocha", new SoundBoardMarsound()));
+        soundboardsList.add(new ModelSoundBoard("Natimals", "Natalie Guevara", new SoundBoardMarsound()));
+        soundboardsList.add(new ModelSoundBoard("Soundboard Lucas", "Lucas King Baltazar", new SoundBoardLucas()));
+
 
         RecyclerViewAdapterSoundBoard adapter = new RecyclerViewAdapterSoundBoard(this.context, this.soundboardsList);
         this.recyclerView.setAdapter(adapter);
