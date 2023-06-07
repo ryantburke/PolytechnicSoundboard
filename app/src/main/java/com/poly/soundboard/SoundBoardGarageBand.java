@@ -14,8 +14,7 @@ public class SoundBoardGarageBand extends SoundBoardActivity {
     private Button btnViolin, btnPiano, btnMystery, btnFlute, btnUkelele, btnHarp;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initialize() {
         setContentView(R.layout.soundboard_garageband);
 
         context = this;
