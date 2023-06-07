@@ -29,6 +29,7 @@
         <activity android:name="com.poly.soundboard.SoundBoardZMenu" />
         <activity android:name="com.poly.soundboard.SoundBoardActivity" />
         <activity android:name="com.poly.soundboard.SoundBoardDarin" />
+        <activity android:name="com.poly.soundboard.SoundBoardAnimalsMisc" />
     </application>
 
 </manifest>
