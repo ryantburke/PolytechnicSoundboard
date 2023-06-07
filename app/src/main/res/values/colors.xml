@@ -47,7 +47,15 @@
     <color name="natimals_txt_btn">#CEF1CF</color>
     <color name="connor_bg">#0ADF10</color>
     <color name="connor_title_txt">#1E321F</color>
-    <color name="connor_btn_txt">#1F3ED5</color>
-    <color name="connor_btn_bg">#D31717</color>
+    <color name="connor_btn_txt">#0441F8</color>
+    <color name="connor_btn_bg">#FF0000</color>
+    <color name="fabrizio_bg">#03A9F4</color>
+    <color name="fabrizio_title_txt">#FAFAFA</color>
+    <color name="fabrizio_btn_txt">#000000</color>
+    <color name="fabrizio_btn_bg">#FFFFFF</color>
+
+
+
+
 
 </resources>
