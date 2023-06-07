@@ -18,8 +18,6 @@ public class SoundBoardActivity extends AppCompatActivity {
     protected ImageView ivSwapper;
 
     private ArrayList<SoundBoardActivity> soundBoards = new ArrayList<SoundBoardActivity>();
-
-    //int[] layouts = {R.layout.activity_main,R.layout.soundboard_funny_sounds,R.layout.soundboard_laughs, R.layout.soundboard_cries};
     private int currentSoundboardIndex = 0;
 
     private SoundBoardActivity currentSoundboard;
@@ -33,9 +31,7 @@ public class SoundBoardActivity extends AppCompatActivity {
 
         //add soundboards
         soundBoards.add(new SoundBoardNaithan());
-        soundBoards.add(new SoundBoardNatimals());
         soundBoards.add(new SoundBoardMeme());
-        soundBoards.add(new SoundBoardMarsound());
         //soundBoards.add(new SoundBoardFairySounds());
         soundBoards.add(new SoundboardDeezy());
         soundBoards.add(new SoundBoardParty());
@@ -43,6 +39,7 @@ public class SoundBoardActivity extends AppCompatActivity {
         soundBoards.add(new SoundBoardAnimalsMisc());
         soundBoards.add(new SoundBoardGarageBand());
         soundBoards.add(new SoundBoardLucas());
+        soundBoards.add(new SoundBoardConnor());
 
         currentSoundboard = soundBoards.get(currentSoundboardIndex);
 
@@ -57,8 +54,6 @@ public class SoundBoardActivity extends AppCompatActivity {
         Log.d("added activity",""+soundBoards.get(0).getClass());
         Log.d("added activity",""+soundBoards.get(1).getClass());
         Log.d("added activity",""+soundBoards.get(2).getClass());
-
-
 
         swapBoardOnGesture();
 
@@ -93,7 +88,7 @@ public class SoundBoardActivity extends AppCompatActivity {
 
                 currentSoundboard = soundBoards.get((currentSoundboardIndex % soundBoards.size() + soundBoards.size()) % soundBoards.size());
 
-                Log.d("Swipe","right");
+                Log.d("Swipe","left");
                 Log.d("Index",""+currentSoundboardIndex);
                 Log.d("Index%",""+currentSoundboardIndex % soundBoards.size() );
 
