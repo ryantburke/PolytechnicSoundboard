@@ -38,4 +38,12 @@
     <color name="lucas_title_txt">#FFFFFF</color>
     <color name="lucas_btn_bg">#F9C3FF</color>
     <color name="lucas_btn_txt">#FFFFFF</color>
+    <color name="jon_bg">#31D8F5</color>
+    <color name="jon_title_txt">#3ef531</color>
+    <color name="jon_btn_bg">#3ef531</color>
+    <color name="jon_btn_txt">#3ef531</color>
+    <color name="natimals_bg">#EFB4C8</color>
+    <color name="natimals_bg_btn">#B0D4F1</color>
+    <color name="natimals_txt_title">#F4F0F0</color>
+    <color name="natimals_txt_btn">#CEF1CF</color>
 </resources>

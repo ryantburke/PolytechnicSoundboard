@@ -35,6 +35,7 @@
         <activity android:name="com.poly.soundboard.SoundBoardGarageBand" />
         <activity android:name="com.poly.soundboard.SoundBoardLucas" />
         <activity android:name="com.poly.soundboard.SoundBoardMarsound" />
+        <activity android:name="com.poly.soundboard.SoundBoardNatimals" />
     </application>
 
 </manifest>

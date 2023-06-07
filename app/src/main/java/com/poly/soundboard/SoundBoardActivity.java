@@ -33,6 +33,7 @@ public class SoundBoardActivity extends AppCompatActivity {
 
         //add soundboards
         soundBoards.add(new SoundBoardNaithan());
+        soundBoards.add(new SoundBoardNatimals());
         soundBoards.add(new SoundBoardMeme());
         soundBoards.add(new SoundBoardMarsound());
         //soundBoards.add(new SoundBoardFairySounds());
