@@ -33,7 +33,6 @@
     <color name="animalsmisc_bg">#357B8C</color>
     <color name="animalsmisc_btn_txt">#8A63D1</color>
     <color name="animalsmisc_btn_bg">#6B57CD6A</color>
-
     <color name="lucas_bg">#274A28</color>
     <color name="lucas_title_txt">#FFFFFF</color>
     <color name="lucas_btn_bg">#F9C3FF</color>
@@ -46,4 +45,9 @@
     <color name="natimals_bg_btn">#B0D4F1</color>
     <color name="natimals_txt_title">#F4F0F0</color>
     <color name="natimals_txt_btn">#CEF1CF</color>
+    <color name="connor_bg">#0ADF10</color>
+    <color name="connor_title_txt">#1E321F</color>
+    <color name="connor_btn_txt">#1F3ED5</color>
+    <color name="connor_btn_bg">#D31717</color>
+
 </resources>
