@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:src="@tools:sample/backgrounds/scenic" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -249,9 +249,9 @@
         android:id="@+id/btn_opencan"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:backgroundTint="@color/naithan_btn_bg2"
         android:text="Open the Can"
         android:textColor="@color/naithan_btn_txt1"
-        android:backgroundTint="@color/naithan_btn_bg1"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guideline12"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
