@@ -14,7 +14,9 @@ import java.util.ArrayList;
 
 public class SoundBoardActivity extends AppCompatActivity {
 
+    private int layoutSelector = 0;
     protected ImageView ivSwapper;
+
     private ArrayList<SoundBoardActivity> soundBoards = new ArrayList<SoundBoardActivity>();
     private int currentSoundboardIndex = 0;
 
@@ -35,6 +37,7 @@ public class SoundBoardActivity extends AppCompatActivity {
         soundBoards.add(new SoundBoardParty());
         soundBoards.add(new SoundBoardDarin());
         soundBoards.add(new SoundBoardAnimalsMisc());
+        soundBoards.add(new SoundBoardGarageBand());
 
 
         currentSoundboard = soundBoards.get(currentSoundboardIndex);
