@@ -42,8 +42,6 @@ public class SoundBoardActivity extends AppCompatActivity {
         soundBoards.add(new SoundBoardDarin());
         soundBoards.add(new SoundBoardAnimalsMisc());
         soundBoards.add(new SoundBoardGarageBand());
-
-        soundBoards.add(new SoundBoardFunnySounds());
         soundBoards.add(new SoundBoardLucas());
 
         currentSoundboard = soundBoards.get(currentSoundboardIndex);
@@ -103,6 +101,11 @@ public class SoundBoardActivity extends AppCompatActivity {
                 startActivity(intent);
 
                 swapBoardOnGesture();
+            }
+
+            public void onSwipeTop(){
+                Intent intent = new Intent(context,SoundBoardZMenu.class);
+                startActivity(intent);
             }
 
         });
