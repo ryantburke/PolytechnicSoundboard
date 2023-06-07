@@ -25,4 +25,8 @@
     <color name="party_title_txt">#D8ED89</color>
     <color name="party_btn_bg">#FFEA80</color>
     <color name="party_btn_txt">#24A38A</color>
+    <color name="darin_bg">#03A9F4</color>
+    <color name="darin_title_txt">#F44336</color>
+    <color name="darin_btn_bg">#F44336</color>
+    <color name="darin_btn_txt">#FFFFFF</color>
 </resources>
