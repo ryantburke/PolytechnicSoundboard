@@ -12,9 +12,6 @@ public class SoundBoardFairySounds extends SoundBoardActivity {
 
     private Button btnMagical, btnWaterSpell, btnBellBless, btnGlitter, btnTeleportaiton, btnHorrorBell, btnPotion, btnVideoGame, btnBellOfPromise, btnSpinning, btnLongSpell, btnBubbles;
 
-
-
-
     protected void initialize() {
         setContentView(R.layout.soundboard_fairysounds);
 
