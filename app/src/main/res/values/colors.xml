@@ -34,4 +34,8 @@
     <color name="animalsmisc_btn_txt">#8A63D1</color>
     <color name="animalsmisc_btn_bg">#6B57CD6A</color>
 
+    <color name="lucas_bg">#274A28</color>
+    <color name="lucas_title_txt">#FFFFFF</color>
+    <color name="lucas_btn_bg">#F9C3FF</color>
+    <color name="lucas_btn_txt">#FFFFFF</color>
 </resources>
