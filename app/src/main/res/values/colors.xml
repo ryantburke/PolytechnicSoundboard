@@ -53,6 +53,11 @@
     <color name="fabrizio_title_txt">#FAFAFA</color>
     <color name="fabrizio_btn_txt">#000000</color>
     <color name="fabrizio_btn_bg">#FFFFFF</color>
+    <color name="nate_bg">#FF9800</color>
+    <color name="nate_title_txt">#FAFAFA</color>
+    <color name="nate_btn_txt">#F40C0C</color>
+    <color name="nate_btn_bg">#FFFFFF</color>
+
 
 
 
