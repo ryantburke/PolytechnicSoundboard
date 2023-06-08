@@ -41,6 +41,7 @@ public class SoundBoardActivity extends AppCompatActivity {
         soundBoards.add(new SoundBoardLucas());
         soundBoards.add(new SoundBoardConnor());
         soundBoards.add(new SoundBoardFabrizio());
+        soundBoards.add(new SoundBoardNate());
 
         currentSoundboard = soundBoards.get(currentSoundboardIndex);
 

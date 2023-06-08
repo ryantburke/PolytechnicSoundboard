@@ -44,6 +44,7 @@
         <activity android:name="com.poly.soundboard.SoundBoardNatimals" />
         <activity android:name="com.poly.soundboard.SoundBoardConnor" />
         <activity android:name="com.poly.soundboard.SoundBoardFabrizio" />
+        <activity android:name="com.poly.soundboard.SoundBoardNate" />
     </application>
 
 </manifest>
