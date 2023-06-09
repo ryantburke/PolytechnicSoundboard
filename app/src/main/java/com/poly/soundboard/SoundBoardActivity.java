@@ -34,6 +34,7 @@ public class SoundBoardActivity extends AppCompatActivity {
         soundBoards.add(new SoundBoardFabrizio());
         soundBoards.add(new SoundBoardConnor());
         soundBoards.add(new SoundboardDeezy());
+        soundBoards.add(new SoundBoardDuck());
         soundBoards.add(new SoundBoardFairySounds());
         soundBoards.add(new SoundBoardGarageBand());
         soundBoards.add(new SoundBoardLeo());
@@ -59,6 +60,8 @@ public class SoundBoardActivity extends AppCompatActivity {
         Log.d("added activity",""+soundBoards.get(0).getClass());
         Log.d("added activity",""+soundBoards.get(1).getClass());
         Log.d("added activity",""+soundBoards.get(2).getClass());
+
+
 
         swapBoardOnGesture();
 
@@ -93,7 +96,7 @@ public class SoundBoardActivity extends AppCompatActivity {
 
                 currentSoundboard = soundBoards.get((currentSoundboardIndex % soundBoards.size() + soundBoards.size()) % soundBoards.size());
 
-                Log.d("Swipe","left");
+                Log.d("Swipe","right");
                 Log.d("Index",""+currentSoundboardIndex);
                 Log.d("Index%",""+currentSoundboardIndex % soundBoards.size() );
 
@@ -101,11 +104,6 @@ public class SoundBoardActivity extends AppCompatActivity {
                 startActivity(intent);
 
                 swapBoardOnGesture();
-            }
-
-            public void onSwipeTop(){
-                Intent intent = new Intent(context, MenuActivity.class);
-                startActivity(intent);
             }
 
         });
