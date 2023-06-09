@@ -104,7 +104,7 @@ public class SoundBoardActivity extends AppCompatActivity {
             }
 
             public void onSwipeTop(){
-                Intent intent = new Intent(context,SoundBoardZMenu.class);
+                Intent intent = new Intent(context, MenuActivity.class);
                 startActivity(intent);
             }
 

@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:text="Long Beach Poly students show off their computer science skills with custom soundboards. All collaborators are credited. Go Jackrabbits."
+            android:text="Long Beach Poly students show off their computer science skills with custom soundboards. All collaborators are credited.\nGo Jackrabbits."
             android:textSize="24sp" />
     </LinearLayout>
 

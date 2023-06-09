@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class SoundBoardZMenu extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
     private MediaPlayer backtrack;
     private Button btnBT1;
     private Button btnBT2;
@@ -19,23 +19,25 @@ public class SoundBoardZMenu extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.soundboard_zmenu);
-        replaceFragment(new AboutFragment());
+        setContentView(R.layout.activity_menu);
+        replaceFragment(new ChooseSoundboardFragment());
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.nav);
         this.nav = bottomNavigationView;
+
+        nav.setSelectedItemId(R.id.soundboards);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             public boolean onNavigationItemSelected(MenuItem item) {
                 int itemId = item.getItemId();
                 if (itemId == R.id.soundboards) {
-                    SoundBoardZMenu.this.replaceFragment(new ChooseSoundboardFragment());
+                    MenuActivity.this.replaceFragment(new ChooseSoundboardFragment());
                     return true;
                 } else if (itemId == R.id.backtracks) {
-                    SoundBoardZMenu.this.replaceFragment(new ChooseBacktrackFragment());
+                    MenuActivity.this.replaceFragment(new ChooseBacktrackFragment());
                     return true;
                 } else if (itemId != R.id.bookmarks) {
                     return true;
                 } else {
-                    SoundBoardZMenu.this.replaceFragment(new AboutFragment());
+                    MenuActivity.this.replaceFragment(new AboutFragment());
                     return true;
                 }
             }
