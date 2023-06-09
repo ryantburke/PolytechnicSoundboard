@@ -5,8 +5,10 @@ import android.content.Context;
 public class BacktrackManager {
     private static BacktrackManager instance;
     private LoopMediaPlayer mediaPlayer;
+    private float volume;
 
     private BacktrackManager() {
+        volume = 1;
     }
 
     public static BacktrackManager getInstance() {
@@ -19,6 +21,7 @@ public class BacktrackManager {
     public void startMediaPlayer(Context context, int file) {
         if (this.mediaPlayer == null) {
             this.mediaPlayer = LoopMediaPlayer.create(context, file);
+            mediaPlayer.setVolume(volume);
         }
     }
 
@@ -29,5 +32,14 @@ public class BacktrackManager {
             this.mediaPlayer.release();
             this.mediaPlayer = null;
         }
+    }
+
+    public void setVolume(float volume) {
+        this.volume = volume;
+        mediaPlayer.setVolume(volume);
+    }
+
+    public float getVolume(){
+        return volume;
     }
 }

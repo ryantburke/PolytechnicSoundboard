@@ -5,9 +5,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.slider.Slider;
 import com.poly.soundboard.RecyclerViewAdapterBacktrack;
 import java.util.ArrayList;
 
@@ -39,10 +43,13 @@ public class ChooseBacktrackFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
+
+
         backtracks = new ArrayList<ModelBacktrack>();
 
+        backtracks.add(new ModelBacktrack("Walking to the Train Station", "Ryan Burke", R.raw.sample_backtrack_train_station));
         backtracks.add(new ModelBacktrack("Garagy", "Ryan Burke", R.raw.sample_backtrack_garagy));
-        backtracks.add(new ModelBacktrack("Anxiety", "Ryan Burke", R.raw.sample_backtrack_anxiety));
+        backtracks.add(new ModelBacktrack("Weird Carnival", "Ryan Burke", R.raw.sample_backtrack_weird_carnival));
 
 
         RecyclerViewAdapterBacktrack adapter = new RecyclerViewAdapterBacktrack(context, backtracks);
@@ -51,6 +58,18 @@ public class ChooseBacktrackFragment extends Fragment {
             public void onItemClick(ModelBacktrack model) {
                 backtrack.stopMediaPlayer();
                 backtrack.startMediaPlayer(ChooseBacktrackFragment.this.context, model.getMediaFile());
+
+            }
+        });
+
+
+        Slider sVolume = (Slider) view.findViewById(R.id.slider_volume);
+
+        sVolume.setValue(backtrack.getVolume() * 50);
+        sVolume.addOnChangeListener(new Slider.OnChangeListener() {
+            @Override
+            public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
+                backtrack.setVolume(value / 50);
             }
         });
     }

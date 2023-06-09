@@ -13,6 +13,7 @@ public class LoopMediaPlayer {
     /* access modifiers changed from: private */
     public MediaPlayer mNextPlayer = null;
     private int mResId = 0;
+    private float volume;
     private MediaPlayer.OnCompletionListener onCompletionListener = new MediaPlayer.OnCompletionListener() {
         public void onCompletion(MediaPlayer mediaPlayer) {
             mediaPlayer.release();
@@ -40,7 +41,8 @@ public class LoopMediaPlayer {
         this.mCurrentPlayer = create;
         create.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             public void onPrepared(MediaPlayer mediaPlayer) {
-                LoopMediaPlayer.this.mCurrentPlayer.start();
+                mCurrentPlayer.start();
+                mCurrentPlayer.setVolume(volume, volume);
             }
         });
         createNextMediaPlayer();
@@ -49,17 +51,20 @@ public class LoopMediaPlayer {
     /* access modifiers changed from: private */
     public void createNextMediaPlayer() {
         MediaPlayer create = MediaPlayer.create(this.mContext, this.mResId);
-        this.mNextPlayer = create;
-        this.mCurrentPlayer.setNextMediaPlayer(create);
-        this.mCurrentPlayer.setOnCompletionListener(this.onCompletionListener);
+        mNextPlayer = create;
+        mNextPlayer.setVolume(volume, volume);
+        mCurrentPlayer.setNextMediaPlayer(create);
+        mCurrentPlayer.setVolume(volume, volume);
+        mCurrentPlayer.setOnCompletionListener(this.onCompletionListener);
     }
 
     public boolean isPlaying() throws IllegalStateException {
         return this.mCurrentPlayer.isPlaying();
     }
 
-    public void setVolume(float leftVolume, float rightVolume) {
-        this.mCurrentPlayer.setVolume(leftVolume, rightVolume);
+    public void setVolume(float volume) {
+        this.volume = volume;
+        this.mCurrentPlayer.setVolume(volume, volume);
     }
 
     public void start() throws IllegalStateException {
@@ -78,6 +83,7 @@ public class LoopMediaPlayer {
         this.mCurrentPlayer.release();
         this.mNextPlayer.release();
     }
+
 
     public void reset() {
         this.mCurrentPlayer.reset();
