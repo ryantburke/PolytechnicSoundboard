@@ -39,6 +39,7 @@
         <activity android:name="com.poly.soundboard.SoundBoardFabrizio" />
         <activity android:name="com.poly.soundboard.SoundBoardNate" />
         <activity android:name="com.poly.soundboard.SoundBoardDuck" />
+        <activity android:name="com.poly.soundboard.SoundBoardGuitar" />
     </application>
 
 </manifest>

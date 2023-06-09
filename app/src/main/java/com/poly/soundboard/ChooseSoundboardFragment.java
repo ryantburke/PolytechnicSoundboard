@@ -40,6 +40,7 @@ public class ChooseSoundboardFragment extends Fragment {
         this.recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         soundboardsList = new ArrayList<ModelSoundBoard>();
+        soundboardsList.add(new ModelSoundBoard("Acoustic Guitar Board", "Esteban DLS", new SoundBoardGuitar()));
         soundboardsList.add(new ModelSoundBoard("Animals & Misc", "Enrique Martinez", new SoundBoardAnimalsMisc()));
         soundboardsList.add(new ModelSoundBoard("BreezyBoard", "Fabrizio Martinez", new SoundBoardFabrizio()));
         soundboardsList.add(new ModelSoundBoard("Connor's Amazing Soundboard", "Connor English", new SoundBoardConnor()));
