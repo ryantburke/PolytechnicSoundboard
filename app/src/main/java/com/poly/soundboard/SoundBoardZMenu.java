@@ -20,7 +20,7 @@ public class SoundBoardZMenu extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.soundboard_zmenu);
-        replaceFragment(new ChooseSoundboardFragment());
+        replaceFragment(new AboutFragment());
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.nav);
         this.nav = bottomNavigationView;
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -48,4 +48,5 @@ public class SoundBoardZMenu extends AppCompatActivity {
         fragmentTransaction.replace(R.id.constraint_layout, fragment);
         fragmentTransaction.commit();
     }
+
 }

@@ -26,6 +26,8 @@
         android:id="@+id/slider_volume"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:thumbColor="@color/poly_yellow"
+        app:trackColorActive="@color/poly_yellow_light"
         android:scaleY="1.2"
         android:valueFrom="0"
         android:valueTo="50"
@@ -44,5 +46,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mRecyclerView" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="STOP"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider_volume" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

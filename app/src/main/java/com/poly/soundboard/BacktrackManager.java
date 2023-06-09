@@ -34,9 +34,23 @@ public class BacktrackManager {
         }
     }
 
+    public void pauseMediaPlayer(){
+        if (mediaPlayer != null) {
+            mediaPlayer.pause();
+        }
+    }
+
+    public void resumeMediaPlayer(){
+        if (mediaPlayer != null) {
+            mediaPlayer.start();
+        }
+    }
+
     public void setVolume(float volume) {
         this.volume = volume;
-        mediaPlayer.setVolume(volume);
+        if (mediaPlayer != null) {
+            mediaPlayer.setVolume(volume);
+        }
     }
 
     public float getVolume(){
