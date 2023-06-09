@@ -40,26 +40,28 @@ public class ChooseSoundboardFragment extends Fragment {
         this.recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         soundboardsList = new ArrayList<ModelSoundBoard>();
-        soundboardsList.add(new ModelSoundBoard("WackAttack 2.0", "Naithan Rivera", new SoundBoardNaithan()));
+        soundboardsList.add(new ModelSoundBoard("Animals & Misc", "Enrique Martinez", new SoundBoardAnimalsMisc()));
+        soundboardsList.add(new ModelSoundBoard("BreezyBoard", "Fabrizio Martinez", new SoundBoardFabrizio()));
+        soundboardsList.add(new ModelSoundBoard("Connor's Amazing Soundboard", "Connor English", new SoundBoardConnor()));
         soundboardsList.add(new ModelSoundBoard("Deezy", "Dylan Ork", new SoundboardDeezy()));
+        soundboardsList.add(new ModelSoundBoard("Fairy Sounds", "Destiny Chacon", new SoundBoardFairySounds()));
+        soundboardsList.add(new ModelSoundBoard("GarageBand", "Hannah Rodriguez", new SoundBoardGarageBand()));
+        soundboardsList.add(new ModelSoundBoard("GoofyBoard", "Leo Lerma", new SoundBoardLeo()));
+        soundboardsList.add(new ModelSoundBoard("The Greatest", "Nate Berumen", new SoundBoardNate()));
+        soundboardsList.add(new ModelSoundBoard("Marsound", "Mario Rocha", new SoundBoardMarsound()));
         soundboardsList.add(new ModelSoundBoard("Meme", "Bryan Guzman", new SoundBoardMeme()));
+        soundboardsList.add(new ModelSoundBoard("Natimals", "Natalie Guevara", new SoundBoardMarsound()));
         soundboardsList.add(new ModelSoundBoard("Party", "Jonathan Mek", new SoundBoardParty()));
         soundboardsList.add(new ModelSoundBoard("Sokit", "Darin Sok", new SoundBoardDarin()));
-        soundboardsList.add(new ModelSoundBoard("Animals & Misc", "Enrique Martinez", new SoundBoardAnimalsMisc()));
-        soundboardsList.add(new ModelSoundBoard("GarageBand", "Hannah Rodriguez", new SoundBoardGarageBand()));
-        soundboardsList.add(new ModelSoundBoard("Marsound", "Mario Rocha", new SoundBoardMarsound()));
-        soundboardsList.add(new ModelSoundBoard("Natimals", "Natalie Guevara", new SoundBoardMarsound()));
         soundboardsList.add(new ModelSoundBoard("Soundboard Lucas", "Lucas King Baltazar", new SoundBoardLucas()));
-        soundboardsList.add(new ModelSoundBoard("Connor's Amazing Soundboard", "Connor English", new SoundBoardConnor()));
-        soundboardsList.add(new ModelSoundBoard("BreezyBoard", "Fabrizio Martinez", new SoundBoardFabrizio()));
-        soundboardsList.add(new ModelSoundBoard("The Greatest", "Nate Berumen", new SoundBoardNate()));
+        soundboardsList.add(new ModelSoundBoard("WackAttack 2.0", "Naithan Rivera", new SoundBoardNaithan()));
 
         RecyclerViewAdapterSoundBoard adapter = new RecyclerViewAdapterSoundBoard(this.context, this.soundboardsList);
         this.recyclerView.setAdapter(adapter);
         adapter.setOnClickListener(new RecyclerViewAdapterSoundBoard.OnItemClickListener() {
             public void onItemClick(ModelSoundBoard model) {
                 Log.d("Clicked", model.getTitle());
-                ChooseSoundboardFragment.this.startActivity(new Intent(ChooseSoundboardFragment.this.context, model.getActivity().getClass()));
+                startActivity(new Intent(ChooseSoundboardFragment.this.context, model.getActivity().getClass()));
             }
         });
     }
