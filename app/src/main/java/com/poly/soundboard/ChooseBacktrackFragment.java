@@ -46,9 +46,8 @@ public class ChooseBacktrackFragment extends Fragment {
 
 
         backtracks = new ArrayList<ModelBacktrack>();
-
-        backtracks.add(new ModelBacktrack("Walking to the Train Station", "Ryan Burke", R.raw.sample_backtrack_train_station));
         backtracks.add(new ModelBacktrack("Garagy", "Ryan Burke", R.raw.sample_backtrack_garagy));
+        backtracks.add(new ModelBacktrack("Walking to the Train Station", "Ryan Burke", R.raw.sample_backtrack_train_station));
         backtracks.add(new ModelBacktrack("Weird Carnival", "Ryan Burke", R.raw.sample_backtrack_weird_carnival));
 
 

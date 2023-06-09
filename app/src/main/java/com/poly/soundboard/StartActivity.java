@@ -14,7 +14,17 @@ public class StartActivity extends AppCompatActivity {
         final Intent intent = new Intent(this, SoundBoardZMenu.class);
         ((Button) findViewById(R.id.btn_launch)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                StartActivity.this.startActivity(intent);
+
+                setContentView(R.layout.activity_start_instructions);
+
+                Button btnLaunch = findViewById(R.id.btn_launch);
+
+                btnLaunch.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        StartActivity.this.startActivity(intent);
+                    }
+                });
             }
         });
     }

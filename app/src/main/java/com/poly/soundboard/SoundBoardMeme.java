@@ -9,12 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SoundBoardMeme extends SoundBoardActivity {
 
-     Button btn_NextPage;
-
      private Button btnWlaugh, btnWeave, btnYeahboy,btnTrombone,btnMscream,btnWhip,btnBruh,btnWoah,btnMygod,btnOhhh,btnJeff,btnLscream;
-
-
-
+     
     @Override
     protected void initialize() {
         setContentView(R.layout.soundboard_meme);
