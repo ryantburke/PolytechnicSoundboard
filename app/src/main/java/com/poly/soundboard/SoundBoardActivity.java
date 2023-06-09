@@ -30,19 +30,21 @@ public class SoundBoardActivity extends AppCompatActivity {
         initialize();
 
         //add soundboards
-        soundBoards.add(new SoundBoardNaithan());
-        soundBoards.add(new SoundBoardLeo());
-        soundBoards.add(new SoundBoardMeme());
-        //soundBoards.add(new SoundBoardFairySounds());
+        soundBoards.add(new SoundBoardAnimalsMisc());
+        soundBoards.add(new SoundBoardFabrizio());
+        soundBoards.add(new SoundBoardConnor());
         soundBoards.add(new SoundboardDeezy());
+        soundBoards.add(new SoundBoardFairySounds());
+        soundBoards.add(new SoundBoardGarageBand());
+        soundBoards.add(new SoundBoardLeo());
+        soundBoards.add(new SoundBoardNate());
+        soundBoards.add(new SoundBoardMarsound());
+        soundBoards.add(new SoundBoardMeme());
+        soundBoards.add(new SoundBoardMarsound());
         soundBoards.add(new SoundBoardParty());
         soundBoards.add(new SoundBoardDarin());
-        soundBoards.add(new SoundBoardAnimalsMisc());
-        soundBoards.add(new SoundBoardGarageBand());
         soundBoards.add(new SoundBoardLucas());
-        soundBoards.add(new SoundBoardConnor());
-        soundBoards.add(new SoundBoardFabrizio());
-        soundBoards.add(new SoundBoardNate());
+        soundBoards.add(new SoundBoardNaithan());
 
         currentSoundboard = soundBoards.get(currentSoundboardIndex);
 
