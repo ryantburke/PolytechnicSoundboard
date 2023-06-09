@@ -64,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top"
-        app:constraint_referenced_ids="imageView" />
+        />
 
     <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
@@ -107,11 +107,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Soundboard"
+        android:text="Soundboard Lucas"
         android:textColor="@color/lucas_title_txt"
         android:textSize="35sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="42dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -322,56 +324,5 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:layout_constraintVertical_bias="0.088" /><![CDATA[
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    "
-        tools:layout_editor_absoluteX="500dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]]>
+        app:layout_constraintVertical_bias="0.088" />
 </androidx.constraintlayout.widget.ConstraintLayout>
