@@ -44,6 +44,7 @@ public class ChooseSoundboardFragment extends Fragment {
         soundboardsList.add(new ModelSoundBoard("BreezyBoard", "Fabrizio Martinez", new SoundBoardFabrizio()));
         soundboardsList.add(new ModelSoundBoard("Connor's Amazing Soundboard", "Connor English", new SoundBoardConnor()));
         soundboardsList.add(new ModelSoundBoard("Deezy", "Dylan Ork", new SoundboardDeezy()));
+        soundboardsList.add(new ModelSoundBoard("Duck", "Jose Gonzalez", new SoundBoardDuck()));
         soundboardsList.add(new ModelSoundBoard("Fairy Sounds", "Destiny Chacon", new SoundBoardFairySounds()));
         soundboardsList.add(new ModelSoundBoard("GarageBand", "Hannah Rodriguez", new SoundBoardGarageBand()));
         soundboardsList.add(new ModelSoundBoard("GoofyBoard", "Leo Lerma", new SoundBoardLeo()));

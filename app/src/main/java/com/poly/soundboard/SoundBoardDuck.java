@@ -25,8 +25,7 @@ public class SoundBoardDuck extends SoundBoardActivity {
     Context context = this;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initialize() {
         setContentView(R.layout.soundboard_duck);
 
         context = this;
