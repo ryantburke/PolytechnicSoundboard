@@ -45,8 +45,11 @@ public class ChooseBacktrackFragment extends Fragment {
         this.recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         backtracks = new ArrayList<ModelBacktrack>();
-        backtracks.add(new ModelBacktrack("Could it Happen to Me", "Ryan Burke", R.raw.sample_backtrack_happen_to_me));
+        backtracks.add(new ModelBacktrack("Basic", "Ryan Burke", R.raw.sample_backtrack_basic));
+        backtracks.add(new ModelBacktrack("The Buildup", "Ryan Burke", R.raw.sample_backtrack_build_up));
+        backtracks.add(new ModelBacktrack("Desert Shimmy", "Ryan Burke", R.raw.sample_backtrack_desert_shimmy));
         backtracks.add(new ModelBacktrack("Garagy", "Ryan Burke", R.raw.sample_backtrack_garagy));
+        backtracks.add(new ModelBacktrack("More Cowbell", "Ryan Burke", R.raw.sample_backtrack_more_cowbell));
         backtracks.add(new ModelBacktrack("To the Depths", "Ryan Burke", R.raw.sample_backtrack_downward));
         backtracks.add(new ModelBacktrack("Walking to the Train Station", "Ryan Burke", R.raw.sample_backtrack_train_station));
         backtracks.add(new ModelBacktrack("Weird Carnival", "Ryan Burke", R.raw.sample_backtrack_weird_carnival));
@@ -54,8 +57,6 @@ public class ChooseBacktrackFragment extends Fragment {
         Slider sVolume = (Slider) view.findViewById(R.id.slider_volume);
 
         Button btnStop = view.findViewById(R.id.btn_stop);
-        btnStop.setEnabled(false);
-
 
         RecyclerViewAdapterBacktrack adapter = new RecyclerViewAdapterBacktrack(context, backtracks);
         recyclerView.setAdapter(adapter);
