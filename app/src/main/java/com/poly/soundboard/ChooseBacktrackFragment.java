@@ -1,6 +1,7 @@
 package com.poly.soundboard;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,6 +24,11 @@ public class ChooseBacktrackFragment extends Fragment {
     /* access modifiers changed from: private */
     public Context context;
     private RecyclerView recyclerView;
+    private SharedPreferences prefs;
+
+    private View view;
+    private View overlayView;
+    private View tutorialLayout;
 
     public static ChooseBacktrackFragment newInstance() {
         return new ChooseBacktrackFragment();
@@ -35,11 +41,14 @@ public class ChooseBacktrackFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         this.context = getActivity();
+        prefs = getActivity().getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+
         return inflater.inflate(R.layout.fragment_backtracks, container, false);
     }
 
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        this.view = view;
         this.recyclerView = (RecyclerView) view.findViewById(R.id.mRecyclerView);;
         recyclerView.setHasFixedSize(true);
         this.recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
@@ -58,6 +67,9 @@ public class ChooseBacktrackFragment extends Fragment {
 
         Button btnStop = view.findViewById(R.id.btn_stop);
 
+        showTutorialIfNeeded();
+
+
         RecyclerViewAdapterBacktrack adapter = new RecyclerViewAdapterBacktrack(context, backtracks);
         recyclerView.setAdapter(adapter);
         adapter.setOnClickListener(new RecyclerViewAdapterBacktrack.OnItemClickListener() {
@@ -66,7 +78,6 @@ public class ChooseBacktrackFragment extends Fragment {
                 backtrack.startMediaPlayer(ChooseBacktrackFragment.this.context, model.getMediaFile());
                 sVolume.setEnabled(true);
                 btnStop.setEnabled(true);
-
             }
         });
 
@@ -95,5 +106,28 @@ public class ChooseBacktrackFragment extends Fragment {
                 BacktrackManager.getInstance().stopMediaPlayer();
             }
         });
+    }
+
+    private void showTutorialIfNeeded() {
+
+        //tutorial settings
+        boolean hasChosenBacktrack = prefs.getBoolean("hasChosenBacktrack",false);
+
+        overlayView = view.findViewById(R.id.overlay);
+        tutorialLayout = view.findViewById(R.id.layout_tutorial_backtrack);
+
+        if (!hasChosenBacktrack) {
+            overlayView.setVisibility(View.VISIBLE);
+            tutorialLayout.setVisibility(View.VISIBLE);
+            overlayView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    overlayView.setVisibility(View.GONE);
+                    tutorialLayout.setVisibility(View.GONE);
+                    prefs.edit().putBoolean("hasChosenBacktrack",true).apply();
+                }
+            });
+        }
+
     }
 }

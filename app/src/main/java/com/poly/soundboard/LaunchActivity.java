@@ -3,6 +3,7 @@ package com.poly.soundboard;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,42 +16,19 @@ public class LaunchActivity extends AppCompatActivity {
 
     private ImageView ivSwapper;
     private Context context;
+    SharedPreferences prefs;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         context = this;
+
+        Intent intent = new Intent(this, MenuActivity.class);
         ((Button) findViewById(R.id.btn_launch)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                setContentView(R.layout.activity_start_instructions);
-
-                setContentView(R.layout.activity_start_instructions);
-                ivSwapper = findViewById(R.id.iv_swiper);
-                swapBoardOnGesture();
+                startActivity(intent);
 
             }
         });
     }
 
-    @SuppressLint("ClickableViewAccessibility")
-    private void swapBoardOnGesture(){
-
-        ivSwapper.setOnTouchListener(new OnSwipeTouchListener(context) {
-            public void onSwipeRight() {
-                Intent intent = new Intent(context,SoundBoardAnimalsMisc.class);
-                startActivity(intent);
-            }
-
-            public void onSwipeLeft() {
-                Intent intent = new Intent(context,SoundBoardNaithan.class);
-                startActivity(intent);
-            }
-
-            public void onSwipeTop(){
-                Intent intent = new Intent(context, MenuActivity.class);
-                startActivity(intent);
-            }
-
-        });
-
-    }
 }

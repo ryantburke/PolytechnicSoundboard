@@ -14,19 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="POLYTECHNIC SOUNDBOARD"
             android:textAlignment="center"
-            android:textSize="28sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="28sp" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -45,99 +45,32 @@
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SWIPE INSTRUCTIONS"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="180dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Move\nto previous \nsoundboard"
-        android:layout_marginLeft="5dp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/poly_green"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_left"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Move\nto previous \nsoundboard"
-        android:textAlignment="center"
-        android:textColor="@color/poly_green"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_left"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back to Menu"
-        android:textAlignment="center"
-        android:textColor="@color/poly_green"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_up"
-        app:layout_constraintEnd_toEndOf="@+id/imageView_up"
-        app:layout_constraintStart_toStartOf="@+id/imageView_up" />
-
-    <ImageView
-        android:id="@+id/imageView_left"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/poly_yellow"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/baseline_keyboard_double_arrow_24"
-        app:tint="@color/poly_green" />
-
-    <ImageView
-        android:id="@+id/imageView_right"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/poly_yellow"
-        android:rotation="180"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/baseline_keyboard_double_arrow_24"
-        app:tint="@color/poly_green" />
-
-    <ImageView
-        android:id="@+id/imageView_up"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/poly_yellow"
-        android:rotation="90"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/baseline_keyboard_double_arrow_24"
-        app:tint="@color/poly_green" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="86dp" />
+
+    <Button
+        android:id="@+id/btn_tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/poly_green"
+        android:text="Reset\nTutorial"
+        android:textSize="26sp"
+        android:textColor="@color/poly_yellow_light"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

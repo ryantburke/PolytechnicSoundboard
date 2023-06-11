@@ -23,4 +23,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"/>
+
+    <!-- Add the tutorial layout on top of the overlay -->
+    <include layout="@layout/activity_instructions_menu"
+        android:visibility="gone"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
