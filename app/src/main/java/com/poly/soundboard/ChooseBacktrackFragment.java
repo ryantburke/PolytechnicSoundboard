@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class ChooseBacktrackFragment extends Fragment {
     /* access modifiers changed from: private */
-    public BacktrackManager backtrack;
+    private BacktrackManager backtrack;
     private ArrayList<ModelBacktrack> backtracks;
     /* access modifiers changed from: private */
     public Context context;

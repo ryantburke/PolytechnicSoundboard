@@ -13,15 +13,15 @@ import java.util.ArrayList;
 public class RecyclerViewAdapterSoundBoard extends RecyclerView.Adapter<RecyclerViewAdapterSoundBoard.MyViewHolder> {
     Context context;
     private OnItemClickListener listener;
-    ArrayList<ModelSoundBoard> soundboardModels;
+    private ArrayList<ModelSoundBoard> soundboardModels;
 
     public interface OnItemClickListener {
-        void onItemClick(ModelSoundBoard modelSoundBoard);
+        void onItemClick(ModelSoundBoard modelSoundBoard, int position);
     }
 
     public RecyclerViewAdapterSoundBoard(Context context, ArrayList<ModelSoundBoard> soundboardModels) {
         this.context = context;
-        this.soundboardModels = soundboardModels;
+        this.soundboardModels = SoundBoardsManager.getInstance().getModels();
     }
 
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -29,15 +29,15 @@ public class RecyclerViewAdapterSoundBoard extends RecyclerView.Adapter<Recycler
     }
 
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        holder.bind(this.soundboardModels.get(position), this.listener);
+        holder.bind(this.soundboardModels.get(position), this.listener, position);
     }
 
     public int getItemCount() {
         return this.soundboardModels.size();
     }
 
-    public void setOnClickListener(OnItemClickListener listener2) {
-        this.listener = listener2;
+    public void setOnClickListener(OnItemClickListener listener) {
+        this.listener = listener;
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
@@ -51,14 +51,14 @@ public class RecyclerViewAdapterSoundBoard extends RecyclerView.Adapter<Recycler
             this.tvAuthor = (TextView) itemView.findViewById(R.id.tv_author);
         }
 
-        public void bind(final ModelSoundBoard model, final OnItemClickListener listener) {
+        public void bind(final ModelSoundBoard model, final OnItemClickListener listener, final int position) {
             this.tvTitle.setText(model.getTitle());
             this.tvAuthor.setText(model.getAuthor());
             Log.d("bind", model.getTitle());
             this.itemView.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     Log.d("click", model.getTitle());
-                    listener.onItemClick(model);
+                    listener.onItemClick(model, position);
                 }
             });
         }

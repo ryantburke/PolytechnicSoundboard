@@ -17,9 +17,9 @@ public class RecyclerViewAdapterBacktrack extends RecyclerView.Adapter<RecyclerV
         void onItemClick(ModelBacktrack modelBacktrack);
     }
 
-    public RecyclerViewAdapterBacktrack(Context context2, ArrayList<ModelBacktrack> backtrackModels2) {
+    public RecyclerViewAdapterBacktrack(Context context2, ArrayList<ModelBacktrack> backtrackModels) {
         this.context = context2;
-        this.backtrackModels = backtrackModels2;
+        this.backtrackModels = backtrackModels;
     }
 
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -34,8 +34,8 @@ public class RecyclerViewAdapterBacktrack extends RecyclerView.Adapter<RecyclerV
         return this.backtrackModels.size();
     }
 
-    public void setOnClickListener(OnItemClickListener listener2) {
-        this.listener = listener2;
+    public void setOnClickListener(OnItemClickListener listener) {
+        this.listener = listener;
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
