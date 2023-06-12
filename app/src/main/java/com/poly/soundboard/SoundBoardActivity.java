@@ -54,6 +54,13 @@ public class SoundBoardActivity extends AppCompatActivity {
         if (!hasSwipedHorizontal || !hasSwipedUp) {
             overlayView.setVisibility(View.VISIBLE);
             tutorialLayout.setVisibility(View.VISIBLE);
+
+            if (hasSwipedHorizontal) {
+                findViewById(R.id.tv_swipe_left).setVisibility(View.INVISIBLE);
+                findViewById(R.id.tv_swipe_right).setVisibility(View.INVISIBLE);
+                findViewById(R.id.iv_swipe_left).setVisibility(View.INVISIBLE);
+                findViewById(R.id.iv_swipe_right).setVisibility(View.INVISIBLE);
+            }
             overlayView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
